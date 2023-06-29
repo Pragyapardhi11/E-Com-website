@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital website</title>
+    <style>
+        .div1{
+            height:240px;
+            width:100%;
+            background-color: rgb(172, 170, 199);
+            display:flex;
+            border: 1px solid black;
+            margin:1.5px;
+        }
+        .mid1{
+            float: left;
+            width:20%
+        }
+        .mid2{
+            float: left;
+           width:80%;
+
+        }
+        .mid2 h1{
+            font-size:50px;
+            height:auto;
+          
+           
+        }
+        .mid2 h2{
+         font-family: cursive;
+        }
+       
+
+        *{
+            padding:0;
+            margin-top: 1px;
+            box-sizing: border-box;
+        }
+        .container{
+            margin-top: 50px;
+            height: 710px;
+            width:100%;
+            background-image: url("https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/Key-Medical-Procedures-6076b56530b6b.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-name: hospital;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes hospital{
+            0%{background-image: url("https://previews.123rf.com/images/slena/slena0904/slena090400033/4655117-medical-hospital-background-in-blue.jpg");}
+            35%{background-image: url("https://wallpaperaccess.com/full/958470.jpg");}
+            75%{background-image: url("https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/instituteexpertises.jpg");}
+            115%{background-image: url("https://cdn.apollohospitcom/dev-apollohospitals/2022/05/transplant-disclaimer-min.jpg");}
+            150%{background-image: url("https://hospitalhealthcare.com/wp-content/uploads/2021/11/GettyImages-1300745916_cropped-300x187.jpg");}
+            210%{background-image: url("https://hospitalhealthcare.com/wp-content/uploads/2022/10/Bionic-pancreas-improves-glycated-haemoglobin-level-in-type-1-diabetics.jpg");}
+
+        
+      }
+        
+      .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(140, 184, 207);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: cursive;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration-style:dotted;
+  font-size: 25px;
+  color: #0d1107;
+  display: block;
+  transition: 0.3s;
+  font-family: cursive;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(167, 204, 223);
+  width:20%;
+  height: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  float:left;
+  margin-top: 0px;
+  margin-right: 1px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+  
+.mid3{
+        width:60%;
+        float: left;
+  }
+
+ .main1{
+    width:20%;
+    background-color:rgb(162, 214, 196);
+    float: right;
+    height:50px;
+  
+    text-align: center;
+ }    
+ .main2{
+    width:20%;
+    background-color: rgb(212, 157, 184);
+   font-size: smaller;
+   float: right;
+   height:50px;
+   text-align: center;
+ } 
+ .main2 img{
+  float: left;
+ }
+ .main1 img{
+  float:left;
+ }
+ 
+
+ body{
+  background: #f2f2f2;
+ }
+.navbar{
+  margin: auto;
+  margin-top: 40px;
+  max-width: 1500px;
+
+}
+ .menus{
+  padding: 10px;
+  background-color:rgb(236, 162, 24);
+  box-shadow: 5px 10px 5px grey;
+  float:left;
+  margin:1.5px;
+  width: 190px;
+  height: 150px;
+  text-align: center;
+ }
+ a{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: verdana;
+  color:black;
+  font-weight: bold;
+ }
+ .menus:hover{
+  background:green;
+  transition: 1s;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s;
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+ }
+ a.hover{
+  color:white;
+  transition: 1s;
+  -webkit-transition: 1s ;
+  -moz-transition: 1s;
+
+ }
+
+ .videoside{
+  height:100%;
+  width:35%;
+  border:1px solid black;
+  background-color: rgb(193, 145, 145);
+  margin-top: 80px;
+ }
+ 
+ .mis,.vis,.goal{
+  border: 3px solid black;
+  width:28%;
+ box-shadow: 5px 10px 10px;
+  background-color: antiquewhite;
+  height: 800px;
+  margin-top: 40px;
+  padding: 10px;
+  float: left;
+
+ }
+ .vis{
+  margin-left: 100px;
+ }
+ .mis{
+  margin-left: 10px;
+ }
+ .goal{
+  margin-left: 100px;
+ }
+ .mis,.vis,.goal h1{
+  text-align: center;
+ }
+ .mis,.vis,.goal h3{
+  text-align: justify;
+
+ }
+ footer{
+  background-color: rgb(17, 248, 248);
+  width:100%;
+  height: 500px;
+  margin-top: 50px;
+
+ }
+ footer h3{
+  background-color: rgb(40, 211, 234);
+  padding: 15px;
+  text-align: center;
+
+ }
+ footer h4{
+  background-color: cadetblue;text-align: center;padding: auto;margin-top: 10px;
+ }
+ .video{
+  margin-top: 80px;
+ }
+ footer img,p{
+  float: left;
+ }
+ .q,.w{
+  float: left;
+ }
+ .q{
+  width:80%;
+ }
+ .w{
+  width:20%;
+  text-align: right;
+  border: 2px solid black;
+ }
+  
+ 
+</style>
+</head>
+<body>
+    <div class="div1" >
+       <div class="mid1">
+        <img src="https://static.qkdoc.com/clinic_logo/clinic_I5WWVB31212_12_01_2018_123605.png" height="237px" width="90%">
+       </div>
+
+
+       <div class="mid2">
+        <h1><i><u>SANJEEVANI CARE HOSPITAL</u></i></h1>
+        <h2>A PLACE WHERE HEALING START's</h2>
+       </div>
+
+
+     </div>
+
+    <h3>
+     
+        
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+        <a href="hospital final website.html">HOME</a>
+        <a href="about us hospital.html">ABOUT US</a>
+        <a href="hospitaldepartment.html">DEPARTMENTS</a>
+        <a href="doctor.html">DOCTORS</a>
+        <a href="facilities hospital.html">FACILITIES</a>
+        <a href="hospitalContactus.html">COhospitalContactus.htmlNTACT US</a>
+       
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()"><img src="https://t3.ftcdn.net/jpg/02/93/53/16/360_F_293531639_RTec7iO5kBTQRGDYQBXdaoWQY9hY2KpJ.jpg" height="50px" width="70px"></button> 
+        </div>
+        <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+    
+          
+    <div class="main1"><p><img src="https://icon-library.com/images/emergency-contact-icon/emergency-contact-icon-10.jpg" height="48px" width="50px">Call:+0701-7768549</p></div>
+          
+            <div class="main2"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLB6q3DmVEy7lgGF55qQiGyj2hGMOCWk7NTqRwOuTKMdTu8jQXzU9_P7hMMeHMBrG7Dg8&usqp=CAU" height="47px" width="50px">  24 HOURS<br> EMERGENCY SERVICE</div></p>
+        
+        
+        </h3>
+      
+    
+
+    
+    
+    <div class="container">
+    </div>
+
+<div class="navbar">
+  <div class="menus"><a href="#"><img src="https://thumbs.dreamstime.com/b/doctor-home-logo-design-stethoscope-icon-228997047.jpg" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="C:\Users\pardh\Desktop\about us hospital.html"><img src="https://w7.pngwing.com/pngs/257/702/png-transparent-about-us-logo-business-logo-company-brand-service-icon-about-us-hd-miscellaneous-blue-text.png" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="C:\Users\pardh\Desktop\hospitaldepartment.html"><img src="https://w7.pngwing.com/pngs/537/385/png-transparent-health-care-hospital-clinic-emergency-department-health-products-text-logo-sign.png" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="C:\Users\pardh\Desktop\doctor.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxYWDgetp-u-COo97jHUsC6dJQ71oRxrM-kEJd9wpDrse8qY-YZl9AbORMqNXFh0YGV0&usqp=CAU" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="#"><img src="https://banner2.cleanpng.com/20180824/yoe/kisspng-health-care-patient-service-health-professional-ph-5b803cea006152.4804090115351308580016.jpg" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="C:\Users\pardh\Desktop\hospitalContactus.html"><img src="https://media.istockphoto.com/vectors/call-contact-us-icon-communication-orange-color-vector-id1225443765?k=20&m=1225443765&s=170667a&w=0&h=xYlfMMytmZEZChFurB_EyKGiTzqFe-mG7I1h08J_fXg=" height="150px" width="150px"></a></div>
+  <div class="menus"><a href="#"><img src="https://www.freelogovector.com/wp-content/uploads/2017/06/40%20-%20PNG%20emergency%20copy.jpg" height="150px" width="150px"></a></div>
+
+</div>
+
+
+   <div class="mis">
+   <h1><strong>Our Vision</strong></h1>
+   <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/internationalpatientcare.jpg" height="300px" width="350px">
+   <p><h3>Our vision is to achieve excellence in Healthcare services by offering unique expertise, state of the art technology & patient care. Metro Group of Hospitals is committed in providing world class health care. society in which all citizens will enjoy holistic care, catering to their physical, mental and spiritual well-being.
+  </h3>
+  </p>
+  </div>
+  <div class="vis">
+    <h1><strong>Our Mission</strong></h1>
+    <img src="https://thumbs.dreamstime.com/b/print-218083949.jpg" height="300px" width="350px">
+    <p><h3>Our immediate agenda is to set up more such dedicated centers for providing wholesome treatment to the patients from all over the country and abroad. We are committed in continually serving the humanity.ransform health care into a experience of compassion and love, by focusing on quality and affordability with special attention to women, children and the poor.Transform health care into a experience of compassion and love, by focusing on quality and affordability with special attention to women, children and the poor.
+
+
+    </h3></p>
+
+  </div>
+  <div class="goal">
+    <h1><strong>Our Goal</strong></h1>
+    <img src="https://gostrengths.com/wp-content/uploads/2012/03/Goal-Setting.jpg" height="300px" width="350px">
+  <p><h3>5 Pillars of Excellence
+  <ul>
+    <h3>*Transparency</h3>
+    <h3>*Affordability</h3>
+    <h3>*Trust</h3>
+    <h3>*Patient Care</h3>
+    <h3>*Commitment</h3>
+    <h3>*To create an ambiance in which the patients experience personal care and attention</h3>
+    <h3>*To focus on holistic healing though psycho- spiritual care</h3>
+  </ul>
+  </h3>
+</p>
+
+  </div>
+
+  
+ 
+
+<div style="width:100%;height:550px;display:flex; margin: 87px; margin-top: 10%;">
+
+  <div class="video" style="height:100%;width:60%;">
+    <video autoplay="true" controls="" height="100%" width="97%">
+      <source src="C:\html doc\VID-20221016-WA0013.mp4" >
+    </video>
+  </div>
+  
+ <div class="videoside">
+  <h1 style=background-color:#f2f2f2 align="center"><u><i>#LATEST NEWS#</i></u></h1>
+  <marquee direction="up" width="100%" height="80%">
+    <h2>*<u>30 DEC:-</u></h2><h3>A Seminar on CPAP was conducted at Pushpa Mission Hosiptal. Dr Jafar Khan and Dr Vivek Pathak were the resourses persons. </h3><br>
+    <h2>*<u>05 JAN:-</u></h2><h3>The New section of NICU and ICU is under construction.</h3><br>
+   <h2>*<u>30 JAN:-</u></h2><h3>Classes were conducted for the staffs by Shri Trivedi, the regional officer of Pollution control board, Ujjain on the rules of Biomedical Waste.</h3><br> 
+   <h2>*<u>09 FEB:-</u></h2><h3>Seats available for 6 months general internship in Dietetics Department at Bombay Hoapital Indore.</h3><br> 
+   <h2>*<u>07 MAR:-</u></h2><h3>The Preeminent NABH Accredited Hospital in Madhya Pradesh. NABH is a benchmark for excellence in health care</h3><br> 
+   <h2>*<u>30 MAR:-</u></h2><h3> Mr. M. Venkiah Naidu for securing first rank in india in the examination of SURGICAL GASTROENTEROLOGY 2017. The award has been institued in memory of Gastrointestinal Surgeon Padmabhushan Dr N. Rangabashyam.</h3><br>
+    
+  </marquee>
+ </div>
+
+</div>
+
+<h1 style="color:brown" align="center"><u><i>ADMINISTRATION</i></u></h1>
+<div style="width:100%;height:350px;display:flex;">
+<div style="width:25%;height:350px;border:1px solid black; margin-inline: 5%;"><img src="https://www.pushpamissionhospital.org/www/images/dir.png" alt="image not load" height="99%" width="100%"></div>
+<div style="width:25%;height:350px;border:1px solid black; margin-inline: 5%;"><img src="https://www.pushpamissionhospital.org/www/images/asst.png" alt="'image not load" height="99%" width="100%"></div>
+<div style="width:25%;height:350px;border:1px solid black; margin-inline: 5%;"><img src="https://www.pushpamissionhospital.org/www/images/admini.png" alt="'image not load" height="99%" width="100%"></div>
+<div style="width:25%;height:350px;border:1px solid black; margin-left: 5px;"><img src="https://www.pushpamissionhospital.org/files/media/administration/20170426_a717214dcf11b05b494e58a49cbaa69a_bpp.png"  alt="'image not load" height="99%" width="100%"></div>
+</div>
+
+<div style="width:100%;height:60px;display:flex;">
+  <div style="width:25%;height:60px; margin-inline: 6%; "><h2 style="color:chocolate" align="center">PATRON <br>BISHOP VADAKEL</h2></div>
+  <div style="width:25%;height:60px; margin-inline: 6%; margin: left 1%;"><h2 style="color:chocolate" align="center">DIRECTOR <br>Mr.ALIEN SKY</h2></div>
+  <div style="width:25%;height:60px; margin-inline: 6%; margin-right: 2%;"><h2 style="color:chocolate" >ASSISTANT DIRECTOR <br>Sr.ESLY</h2></div>
+  <div style="width:25%;height:60px; margin-inline: 5%; margin-right: 2px;"><h2 style="color:chocolate" align="center">ADMINISTRATOR <br>Fr.LIJO IKKARA</h2></div>
+
+</div>
+<footer>
+  <h3>Copyright © 2017 Pushpa Mission Hospital. Powered By SMCIM. All right researved.</h3>
+  <h4>Transform health care into a experience of compassion and love, by focusing on quality and affand affordability with special attention to women, children and the poor. A society in which all citizens will enjoy holistic care, catering to their physical, mental and spiritual well-being</h4>
+  <div class="q"><p><img src="https://apollocbcc.com/wp-content/uploads/2015/04/apollo-ahmedabad.jpg" height="350px" width="450px"><h3>>Explore Our Heart Institute Features
+    Milestones</h3><br>
+    
+    <b>*Treatments<br>
+    
+    *Facilities<br>
+    
+    *Diagnostic Services<br>
+    
+    *Clinical Team<br>
+    
+    *Tracking Outcomes<br>
+    
+    *Testimonials<br>
+    
+    *Clinical Articles<br>
+    
+    *Saving A Child's Heart<br>
+    
+    *Post a Query</p></div>
+    <div class="w">
+      <h4>contact us:</h4>
+      <ul>
+        <li>Gmail:sanjeevani1234@gmail.com</li>
+        <li>Instagram:sanjeevani123</li>
+        <li>telegram :hosposanjeevani</li>
+
+      </ul>
+    </div>
+</footer>
+
+</body>
+</html>

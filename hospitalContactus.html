@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+          
+          .div1{
+            height:240px;
+            width:100%;
+            background-color: rgb(172, 170, 199);
+            display:flex;
+            border: 1px solid black;
+            margin:1.5px;
+        }
+        .mid1{
+            float: left;
+            width:20%
+        }
+        .mid2{
+            float: left;
+           width:80%;  
+   }
+        .mid2 h1{
+            font-size:50px;
+            height:auto;
+          
+           
+        }
+        .mid2 h2{
+         font-family: cursive;
+        }
+		.img{
+            height:"400px";
+            width:"100%";
+            position: relative;
+       
+        }
+        .img h1{
+         position:absolute;
+        top:30%;
+        left:45%;
+        color:black;
+        font-size: 250%;
+    
+        }
+		.pragya{
+		margin-left:400px;
+		}
+        footer{
+  background-color: rgb(17, 248, 248);
+  width:100%;
+  height: 500px;
+  margin-top: 50px;
+
+ }
+ footer h3{
+  background-color: rgb(40, 211, 234);
+  padding: 15px;
+  text-align: center;
+
+ }
+ footer h4{
+  background-color: cadetblue;text-align: center;padding: auto;margin-top: 10px;
+ }
+ .video{
+  margin-top: 80px;
+ }
+ footer img,p{
+  float: left;
+ }
+ .q,.w{
+  float: left;
+ }
+ .q{
+  width:80%;
+ }
+ .w{
+  width:20%;
+  text-align: right;
+  border: 2px solid black;
+ }
+ .sidebar {
+                    height: 100%;
+                    width: 0;
+                    
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(140, 184, 207);
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                    font-family: cursive;
+                    }
+
+
+
+                            .sidebar a {
+                            padding: 8px 8px 8px 32px;
+                            text-decoration-style:dotted;
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: #0d1107;
+                            display: block;
+                            transition: 0.3s;
+                            font-family: cursive;
+                            }
+
+                            .sidebar a:hover {
+                            color: #f1f1f1;
+                            }
+
+                            .sidebar .closebtn {
+                            position: absolute;
+                            top: 0;
+                            right: 25px;
+                            font-size: 36px;
+                            margin-left: 50px;
+                            }
+
+                            .openbtn {
+                            font-size: 20px;
+                            cursor: pointer;
+                            background-color: #111;
+                            color: white;
+                            padding: 10px 15px;
+                            border: none;
+                            }
+
+                            .openbtn:hover {
+                            background-color: rgb(167, 204, 223);
+                            width:20%;
+                            height: 50px;
+                            }
+
+                            #main {
+                            transition: margin-left .5s;
+                            padding: 16px;
+                            float:left;
+                            margin-top: 0px;
+                            margin-right: 1px;
+                            }
+ 
+
+ 
+    </style>
+</head>
+<body>
+    <div class="div1" >
+        <div class="mid1">
+         <img src="https://static.qkdoc.com/clinic_logo/clinic_I5WWVB31212_12_01_2018_123605.png" height="237px" width="90%">
+        </div>
+ 
+ 
+        <div class="mid2">
+         <h1><i><u>SANJEEVANI CARE HOSPITAL</u></i></h1>
+         <h2>A PLACE WHERE HEALING START's</h2>
+        </div> 
+      </div>
+      
+
+      <div class="img">
+      <img src="https://thumbs.dreamstime.com/b/healthcare-medical-concept-medicine-doctor-stethoscope-hand-patients-come-to-hospital-background-179931139.jpg" width="100%" height="400px">
+      <center><h1>CONTACT US </h1></center>
+      </div>
+<br>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="hospital final website.html">HOME</a>
+    <a href="about us hospital.html">ABOUT US</a>
+    <a href="hospitaldepartment.html">DEPARTMENTS</a>
+    <a href="doctor.html">DOCTORS</a>
+    <a href="facilities.html">FACILITIES</a>
+    <a href="hospitalContactus.html">CONTACT US</a>
+   
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()"><img src="https://t3.ftcdn.net/jpg/02/93/53/16/360_F_293531639_RTec7iO5kBTQRGDYQBXdaoWQY9hY2KpJ.jpg" height="50px" width="70px"></button> 
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+      <br>
+
+	<section class="sub-page-banner text-center" data-stellar-background-ratio="0.3">
+				
+		<div class="overlay"></div>
+		
+		
+	</section>
+
+
+<div id="sub-page-content" class="clearfix">
+		
+		<div class="container">
+			<p style="color:#F00; font-size:14px; margin:200px;"> </p>
+			<h2 class="light bordered">Get Directions<span></span></h2>
+			
+			<div class="row">
+				
+				<div class="col-md-12">
+					
+					<!-- Map
+					============================================= -->
+					<script src="https://maps.googleapis.com/maps/api/js?v=3key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+					<script src="https://www.sanjeevanicarehospital.org/www/js/map.js"></script>
+								
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14672.208674073718!2d75.795963!3d23.168296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe435b99aed139acf!2sPushpa+Mission+Hospital!5e0!3m2!1sen!2sin!4v1493261336564" width="1140" height="465" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="get-directions">
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<br>
+			<br>
+			<br>
+			
+		<div class="pragya">
+			<table border=1% width="75%" cellpadding="25px">
+				<tr>
+					<th>Service </th>
+					<th>Number</th>
+				</tr>
+				<tr>
+					<td>For Doctor Appointment of International Patients</td>
+					<td>040-43441066</td>
+				
+				</tr>
+				<tr>
+					<td>For Apollo Personalized Health Checks</td>
+					<td>18605000707</td>
+				</tr>
+				<tr>
+					<td>For Kavach, Stay Isolated at Home or Facility</td>
+					<td>18605000202</td>
+		
+				</tr>
+				<tr>
+					<td>For Healthy Heart Doctor Appointment</td>
+					<td>18605003175</td>
+
+				</tr>
+				
+				<tr>
+					<td>For Ambulance or Emergency Services Dial National Number</td>
+					<td>1066s</td>
+					
+				</tr>
+				
+				
+
+			</table>
+		</div>
+				
+
+
+    <footer>
+        <h3>Copyright © 2017 Sanjeevani Care Hospital. Powered By SMCIM. All right researved.</h3>
+        <h4>Transform health care into a experience of compassion and love, by focusing on quality and affand affordability with special attention to women, children and the poor. A society in which all citizens will enjoy holistic care, catering to their physical, mental and spiritual well-being</h4>
+        <div class="q"><p><img src="https://apollocbcc.com/wp-content/uploads/2015/04/apollo-ahmedabad.jpg" height="350px" width="450px"><h3>>Explore Our Heart Institute Features
+          Milestones</h3><br>
+          
+          <b>*Treatments<br>
+          
+          *Facilities<br>
+          
+          *Diagnostic Services<br>
+          
+          *Clinical Team<br>
+          
+          *Tracking Outcomes<br>
+          
+          *Testimonials<br>
+          
+          *Clinical Articles<br>
+          
+          *Saving A Child's Heart<br>
+          
+          *Post a Query</p></div>
+      </footer>
+      
+      </body>
+      </html>
+</body>
+</html>

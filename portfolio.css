@@ -1,0 +1,234 @@
+.sidebar{
+/*background-color: chocolate;*/
+background-color: rgb(224, 219, 219);
+
+font-family: 'Roboto Slab', serif;
+height: 100vh;
+transition: transform 0 3s ease-in;
+}
+
+.sidebar nav{
+padding:2%;
+font-size:medium;
+font-weight: bold;
+
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color:rgb(10, 10, 10);
+}
+.main{
+   /* background-color: cornflowerblue;*/
+    width:100%;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /*background-color: darkred;*/
+    width: 70vw;
+    height:52vh;
+    margin-left:150px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.divpic img{
+    width: 300px;
+    height: 52vh;
+}
+.divinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px ;
+    font-weight: bold;
+     font-family: 'Fira Sans', sans-serif;
+
+}
+.about{
+    font-size: 35px;
+
+}
+.moreabout{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.button button{
+margin-top: 400px;
+padding: 9px 14px;
+border-radius: 22px;
+color: white;
+background-color: dodgerblue;
+font-weight: bold;
+font-size: 22px;
+margin:0 3px;
+cursor: pointer;
+}
+
+.btn-sm{
+    margin-top: 400px;
+padding: 9px 14px;
+border-radius: 22px;
+color: white;
+background-color: dodgerblue;
+font-weight: bold;
+font-size: 22px;
+margin:0 3px;
+cursor: pointer;
+
+}
+.btn-sm{
+    font-size: 17px;
+}
+.btn-sm:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.button button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.contactform h1{
+    font-family: monospace;
+
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+   width: 25vw;
+   border-radius: 5px;
+   margin: 6px 0;
+   padding: 3px;
+}
+
+
+#emailHelp{
+    font-size: 13px;
+    color: midnightblue;
+    margin: 0 6px;
+}
+
+#form-check{
+flex-direction: row;
+}
+
+#form-check input{
+width:25px;
+margin: 3px 0;
+}
+
+
+.blogitem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+ h1{
+    font-family: 'Fira Sans', sans-serif;
+margin: 23px;
+}
+
+ p{
+    font-family: monospace;
+}
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+    
+}
+.intro p{
+    font-family: monospace;
+    margin: 12px;
+   
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+}
+ 
+.skillitem{
+display: flex;
+align-items: center;
+font-family: monospace;
+font-weight:900 ;
+
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+.skilltwf{
+    width: 180px;
+    height: 2px;
+    background-color: darkblue;
+    border: 2px solid black;
+}
+.skilltw{
+    width: 120px;
+    height: 2px;
+    background-color: rgb(139, 0, 0);
+    border: 2px solid black;
+}
+.skilleighty{
+    width: 200px;
+    height: 2px;
+    background-color:red;
+    border: 2px solid black;
+}
+.skillseventy{
+    width: 280px;
+    height: 2px;
+    background-color:yellow;
+    border: 2px solid black;
+}
+.skillth{
+    width: 100px;
+    height: 2px;
+    background-color: rgb(182, 20, 163);
+    border: 2px solid black;
+}
+
+.hamergun{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 14px;
+
+}
+
+.cross{
+    margin-left: 200px;
+}
+
+.sidebarGo{
+    transform: translate(-444px 0px);
+    position: absolute;
+}

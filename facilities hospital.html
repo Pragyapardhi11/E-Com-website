@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+</head>
+<style>
+    .div1{
+            height:240px;
+            width:100%;
+            background-color: rgb(172, 170, 199);
+            display:flex;
+            border: 1px solid black;
+            margin:1.5px; 
+        }
+        .mid1{
+            float: left;
+            width:20%
+        }
+        .mid2{
+            float: left;
+           width:80%;
+
+        }
+        .mid2 h1{
+            font-size:50px;
+            height:auto;
+          
+           
+        }
+        .mid2 h2{
+         font-family: cursive;
+        }
+       
+
+        *{
+            padding:0;
+            margin-top: 1px;
+            box-sizing: border-box;
+        }
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(140, 184, 207);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: cursive;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration-style:dotted;
+  font-size: 25px;
+  color: #0d1107;
+  display: block;
+  transition: 0.3s;
+  font-family: cursive;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(167, 204, 223);
+  width:20%;
+  height: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  float:left;
+  margin-top: 0px;
+  margin-right: 1px;
+}
+.t1{
+    background-color: lightblue;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ 
+
+ 
+ footer{
+    margin-top: 30px;
+    background-color: rgb(40, 226, 226);
+    height: 1000px;
+}
+footer .q{
+    width:70%;
+}
+ 
+ 
+</style>
+<body>
+    <div>
+    <div class="div1" >
+        <div class="mid1">
+         <img src="https://static.qkdoc.com/clinic_logo/clinic_I5WWVB31212_12_01_2018_123605.png" height="237px" width="90%">
+        </div>
+ 
+ 
+        <div class="mid2">
+         <h1><i><u>SANJEEVANI CARE HOSPITAL</u></i></h1>
+         <h2>A PLACE WHERE HEALING START's</h2>
+        </div>
+ 
+ 
+      </div>
+      
+     <h3>
+      
+         
+       <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="hospital final website.html">HOME</a>
+         <a href="about us hospital.html">ABOUT US</a>
+         <a href="hospitaldepartment.html">DEPARTMENTS</a>
+         <a href="doctor.html">DOCTORS</a>
+         <a href="facilities.html">FACILITIES</a>
+         <a href="hospitalContactus.html">CONTACT US</a>
+       
+       </div>
+       
+       <div id="main">
+         <button class="openbtn" onclick="openNav()"><img src="https://t3.ftcdn.net/jpg/02/93/53/16/360_F_293531639_RTec7iO5kBTQRGDYQBXdaoWQY9hY2KpJ.jpg" height="50px" width="70px"></button> 
+         </div>
+         <script>
+           function openNav() {
+             document.getElementById("mySidebar").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+           }
+           
+           function closeNav() {
+             document.getElementById("mySidebar").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+           }
+           </script>
+           <div class="main1">
+            <img src="https://i.pinimg.com/originals/54/1a/ef/541aef2b681dcea5a14098bbff3892b0.jpg" style="width:300px;height:150px;float:right;">
+            <h1 style="text-align:center;background-color:lightcoral">FACILITIES</h1>
+            <h1 style="text-align:center;background-color:lightcoral">THE SANJEEVANI HOSPITAL</h1>
+           </div>
+           <div class="t1">
+            <img src="https://alliancehospital.net/images/Casualty.jpg" style="width:350px;height:200px;float:right;">
+            <h2 style="background-color:lightcoral">CASUALTY</h2>
+            
+            <p>Casualty beeps alert round the clock with expert health care team to meet any kind of service/care to all by respecting the value of life. We have in the casuality 7 beds, ready to give prompt service to the emergency cases.</p>
+
+           </div>
+           <div class="t1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaSEgZIPO2mxifcOwwSDIt7eagIsNSA-kAOg&usqp=CAU" style="width:350px;height:170px;float:left;">
+            <h2 style="background-color:lightcoral;">PHARMACY</h2>
+            <p>Pharmacy dispenses medicines at a reduced rate. The pharmacy store is given special attention to keep its temperature always cool.</p>
+
+           </div>
+           <div class="t1">
+            <img src="https://www.shantigopalhospitals.com/wp-content/uploads/2015/08/4-pathology.png" style="width:350px;height:200px;float:right;">
+            <h2 style="background-color:lightcoral">PATHOLOGY DEPARTMENT</h2>
+            <p>The modern equipments in the laboratory backs the functioning of the hospital for the speedy recovery of the patients. A full time pathologist and twelve technicians work here devoutedly.</p>
+           </div>
+           <div class="t1">
+            <img src="https://kmchhospitals.com/wp-content/uploads/2016/images/Blood-bank-img1.jpg" style="width:350px;height:240px;float:left;">
+            <h2 style="background-color:lightcoral;">BLOOD BANK</h2>
+            <p>
+                Hospital has a licensed Blood bank (Whole Blood and Components ) with modern machines and accurate reports. Since there are two blood banks (Component) in Ujjain it rendering its service with the support of Rotary Club. Blood bank is giving immense service to the patients and is an asset to the city.</p>
+           </div>
+           <div class="t1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpL5_9ehV5-rLzfGcXsYthlJbDO_OAgR6vyA&usqp=CAU" style="width:350px;height:220px;float:right;">
+            <h2 style="background-color:lightcoral">NURSING SCHOOL</h2>
+            <p>The nursing school run by the S. H Sisters of Ujjain Province can accommodate 20 new students every year. In the past few years two of the students were awarded with gold medals and three of them got first ranks. Nursing students are given exemplary training in the field of nursing in well furnished lab and classrooms.</p>
+           </div>
+           <div class="t1">
+        <img src="https://5.imimg.com/data5/HV/KT/MY-41982528/hospital-canteen-service-500x500.jpg" style="width:350px;height:220px;float:left;">
+        <h2 style="background-color:lightcoral;">CANTEEN</h2>   
+        <p>The newly inaugurated Canteen give exemplary food as per the diet proposed by the dietician.
+            Emulent Water Treatment Plant-
+            The main aim is to make use of the used water for the plants and the greenery around. The garden is watered with this water.</p>
+        </div>
+<div class="t1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUu1d4EjJZ3t-AL90BopYlVjAZW1Ydgg3tg&usqp=CAU" style="width:350px;height:220px;float:right;">
+    <h2 style="background-color:lightcoral;">PARKING</h2>
+    <p>We have  spacious parking ground that can accommodate 150 two wheelers and 30 four wheelers.
+        Healthy Atmosphere-
+        Hospital has a very hygenic surrounding with trees and garden. Away from the pollution of the city, Pushpa Mission Hospital provides a very healthy atmosphere for the staff and patients. </p>
+
+</div>
+</div>
+<footer>
+    <h3>Copyright © 2017 Pushpa Mission Hospital. Powered By SMCIM. All right researved.</h3>
+    <h4>Transform health care into a experience of compassion and love, by focusing on quality and affand affordability with special attention to women, children and the poor. A society in which all citizens will enjoy holistic care, catering to their physical, mental and spiritual well-being</h4>
+    <div class="q"><p><img src="https://apollocbcc.com/wp-content/uploads/2015/04/apollo-ahmedabad.jpg" height="350px" width="400px"><h3>>
+  </footer>
+   
+</body>
+</html>
